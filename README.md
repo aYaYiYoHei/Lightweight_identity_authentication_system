@@ -1,1 +1,4 @@
 # Lightweight_identity_authentication_system
+通过socket实现两主机之间的通信。
+通过java.crypto包实现DH算法和RSA算法来协商会话用的DES的密钥和认证，通过协商好的DES密钥实现会话中明密文的加解密。
+对A方的发送的明文使用DES加密生成密文，对明文进行使用MD5算法生成hash值后使用RSA签名。将密文和签名后的数据发送给B。
